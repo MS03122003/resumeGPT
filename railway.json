@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "gunicorn --bind :$PORT --workers 2 --threads 4 --timeout 120 app:app",
+    "variables": {
+      "FLASK_ENV": "production"
+    }
+  }
+}
