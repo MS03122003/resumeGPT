@@ -559,4 +559,4 @@ if __name__ == '__main__':
         logger.warning(f"Missing environment variables: {missing_vars}")
         logger.warning("Please set these variables for full functionality")
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)
